@@ -1,5 +1,11 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { MDBBootstrapModule } from 'angular-bootstrap-md';
+import { NoopAnimationsModule } from '@angular/platform-browser/animations';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatListModule } from '@angular/material/list';
+import { MatIconModule } from '@angular/material/icon';
+import { MatToolbarModule } from '@angular/material/toolbar';
 
 // Modulos
 import { AppRoutingModule } from './app-routing.module';
@@ -18,6 +24,7 @@ import { InversionistaComponent } from './inversionista/inversionista.component'
 import { DashboardInvComponent } from './inversionista/dashboard-inv/dashboard-inv.component';
 import { ClienteComponent } from './cliente/cliente.component';
 import { DashboardClienteComponent } from './cliente/dashboard-cliente/dashboard-cliente.component';
+import { ComprarClienteComponent } from './cliente/comprar-cliente/comprar-cliente.component';
 
 @NgModule({
   declarations: [
@@ -34,11 +41,18 @@ import { DashboardClienteComponent } from './cliente/dashboard-cliente/dashboard
     InversionistaComponent,
     DashboardInvComponent,
     ClienteComponent,
-    DashboardClienteComponent
+    DashboardClienteComponent,
+    ComprarClienteComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    MDBBootstrapModule.forRoot(),
+    MatSidenavModule,
+    NoopAnimationsModule,
+    MatListModule,
+    MatIconModule,
+    MatToolbarModule
   ],
   providers: [],
   bootstrap: [AppComponent]
