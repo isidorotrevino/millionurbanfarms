@@ -34,3 +34,6 @@ git push -u origin master <- sube archivos
 ## DEPENDENCIES
 
 npm install bootstrap --save
+npm install mdbootstrap --save
+npm install -–save chart.js@2.5.0 @types/chart.js @types/chart.js @fortawesome/fontawesome-free hammerjs animate.css
+npm install --save @angular/material @angular/cdk @angular/animations
