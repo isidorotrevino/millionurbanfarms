@@ -37,3 +37,7 @@ npm install bootstrap --save
 npm install mdbootstrap --save
 npm install -–save chart.js@2.5.0 @types/chart.js @types/chart.js @fortawesome/fontawesome-free hammerjs animate.css
 npm install --save @angular/material @angular/cdk @angular/animations
+
+
+## IMG
+https://image.freepik.com/free-vector/green-polygonal-background-design_1009-22.jpg
