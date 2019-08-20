@@ -41,3 +41,4 @@ npm install --save @angular/material @angular/cdk @angular/animations
 
 ## IMG
 https://image.freepik.com/free-vector/green-polygonal-background-design_1009-22.jpg
+http://suttonssp.co.uk/wp-content/uploads/2018/08/green-background.png
