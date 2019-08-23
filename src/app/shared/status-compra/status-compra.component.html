@@ -1,0 +1,24 @@
+<form class="m-2 m-left-2">
+
+    <div class="page-header centrado">
+        <h2><b>PURCHASE STATUS</b></h2>
+    </div>
+
+    <ng-container *ngFor="let product of listProducts">
+        <div class="table-responsive">
+            <table class="table">
+                <tbody>
+                    <tr>
+                        <td> <img [src]="product.img" alt="lechuga" class="img-thumbnail" style="width: 200px"></td>
+                        <td>
+                            <table>
+                                <tr>Product: {{ product.name }}</tr>
+                                <tr><b>Status: {{ product.status }}</b></tr>
+                            </table>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </ng-container>
+</form>

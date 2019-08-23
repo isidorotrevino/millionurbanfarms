@@ -1,0 +1,78 @@
+.hr-dash {
+    border-width: 1px;
+    border-color: #b3b1b1;
+    width: 250%;
+}
+
+.icon-option {
+    color: #3AAD0C;
+}
+
+.a-option {
+    font-size: 20px;
+    background-image: linear-gradient(to right, #3AAD0C 0%, #b4f141 100%);
+    margin-left: 30px;
+    border-radius: 25px;
+    padding: 10px;
+    font-weight: bold;
+
+    width: 50%;
+    text-align: center;
+    cursor: pointer;
+    display: block;
+}
+
+.a-option span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.a-option span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+  
+.a-option:hover span {
+    padding-right: 25px;
+}
+  
+.a-option:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+.td-icon {
+    text-align: right;
+    width: 40%;
+}
+
+.td-a {
+    text-align: left;
+}
+
+table, tr, td {
+    text-align: center;
+    border: none;
+}
+
+@media only screen and (max-width: 720px) and (min-width: 5px)  {  
+    .a-option {
+        font-size: 20px;
+        background-image: linear-gradient(to right, #3AAD0C 0%, #b4f141 100%);
+        margin-left: 5px;
+        border-radius: 25px;
+        padding: 10px;
+        font-weight: bold;
+    
+        width: 75%;
+        text-align: center;
+        cursor: pointer;
+        display: block;
+    }
+} 

@@ -1,93 +1,74 @@
-<div class="container">
-    <div class="row">
-        <div class="input-group mb-3">
-            <div class="input-group md-form form-sm form-2 pl-0">
-                <div class="dropdown">
-                    <span class="caret"></span>
-                    <button class="btn btn-light dropdown-toggle" type="button" data-toggle="dropdown">Filter by </button>
-                    <div class="dropdown-menu">
-                        <a class="dropdown-item" href="#">Name</a>
-                        <a class="dropdown-item" href="#">Price</a>
-                    </div>
-                </div>
-                <input type="text" class="form-control" placeholder="Search">
-                <div class="input-group-append">
-                    <button class="btn btn-success" type="submit"><i class="fa fa-search"></i></button>
-                </div>
-            </div>
+<form class="m-2 m-left-2">
+    <div class="page-header centrado">
+        <h2><b>CLOSE TO YOUR HOME </b></h2>
+        <hr>
+        <br>
+
+    </div>
+    <div class="input-group mb-1 active-green centrado">
+        <div class="input-group md-form">
+            <select value="" id="criterio" mdbBtn color="success" class="dropdown-toggle waves-light px-2" type="button">
+                <option selected hidden>FILTER</option>
+                <option value="NAME">NAME</option>
+                <option value="MORE THAN">MORE THAN</option>
+                <option value="LESS THAN">LESS THAN</option>
+            </select>
+            <input value="" id="cadena" type="text" class="form-control" placeholder="Search">
+            <button class="btn btn-success px-3" type="submit" (click)="searchProduct()"><i class="fa fa-search"></i></button>
         </div>
     </div>
-</div>
+</form>
 
-<div class="text-center">
-    <div class="page-header">
-        <h1>Cerca de tu area </h1>
-    </div>
-</div>
-
-<div class="table-responsive">
-    <table class="table">
-        <tbody>
-            <tr>
-                <td>
-                    <table>
-                        <tr>
-                            <td> <img src="https://mdbootstrap.com/img/Others/documentation/img%20(75)-mini.jpg" alt="lechuga" class="img-thumbnail" style="width: 200px">
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <div class="input-group-append">
-                                    <input type="number" class="form-control" placeholder="Cantidad" formControlName="cantidad">
-                                    <button class="btn btn-success">Buy</button>
-
+<ng-container *ngFor="let product of listProducts">
+    <div class="table-responsive">
+        <table class="table centrado-table">
+            <tbody>
+                <tr>
+                    <td>
+                        <table>
+                            <tr>
+                                <img [src]='product.img' alt="lechuga" class="img-thumbnail" style="width: 200px">
+                                <div class="form-row">
+                                    <div class="input-group active-green-2">
+                                        <input type="number" class="form-control" placeholder="Unit" style="width:50px">
+                                        <button class=" btn btn-success btn-sm " type="submit" (click)="EventoAlert()">BUY!</button>
+                                    </div>
+                                    <div class="custom-control custom-checkbox checkbox-success">
+                                        <input type="checkbox" class="custom-control-input " id="defaultUnchecked">
+                                        <label class="custom-control-label" for="defaultUnchecked">Picker Up</label>
+                                    </div>
                                 </div>
-                            </td>
-                        </tr>
-                    </table>
-                </td>
-                <td>
-                    <table>
-                        <tr>
-                            <td>Nombre Producto</td>
-                        </tr>
-                        <tr>
-                            <td>Nombre del productor</td>
-                        </tr>
-                        <tr>
-                            <td>Fecha de cosecha</td>
-                        </tr>
-                    </table>
-                </td>
-                <td>
-                    <table>
-                        <tr>
-                            <td>Medida</td>
-                        </tr>
-                        <tr>
-                            <td>Precio</td>
-                        </tr>
-                        <tr>
-                            <td>Cantidad disponible</td>
-                        </tr>
-                    </table>
-                </td>
-            </tr>
-        </tbody>
-    </table>
-</div>
-
-<div class="btn-group" mdbDropdown>
-    <button mdbDropdownToggle type="button" mdbBtn color="primary" class="dropdown-toggle waves-light"
-      mdbWavesEffect>
-      Basic dropdown
-    </button>
-  
-    <div class="dropdown-menu dropdown-primary">
-      <a class="dropdown-item" href="#">Action</a>
-      <a class="dropdown-item" href="#">Another action</a>
-      <a class="dropdown-item" href="#">Something else here</a>
-      <div class="divider dropdown-divider"></div>
-      <a class="dropdown-item" href="#">Separated link</a>
+                            </tr>
+                        </table>
+                    </td>
+                    <td>
+                        <table>
+                            <tr>
+                                <td>Product: {{ product.name }}</td>
+                            </tr>
+                            <tr>
+                                <td>Producer: {{ product.vendedor.name }}</td>
+                            </tr>
+                            <tr>
+                                <td>Harverst date: {{ product.cosecha }}</td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td>
+                        <table>
+                            <tr>
+                                <td>Meansurement: {{ product.medida }}</td>
+                            </tr>
+                            <tr>
+                                <td>Price: {{ product.preciom }}</td>
+                            </tr>
+                            <tr>
+                                <td>Units available: {{ product.cantidad }} </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
     </div>
-</div> 
+</ng-container>

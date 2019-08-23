@@ -37,3 +37,12 @@ npm install bootstrap --save
 npm install mdbootstrap --save
 npm install -–save chart.js@2.5.0 @types/chart.js @types/chart.js @fortawesome/fontawesome-free hammerjs animate.css
 npm install --save @angular/material @angular/cdk @angular/animations
+npm install ngx-bootstrap --save
+npm install sweetalert2
+npm install awesome-bootstrap-checkbox
+
+
+
+## IMG
+https://image.freepik.com/free-vector/green-polygonal-background-design_1009-22.jpg
+http://suttonssp.co.uk/wp-content/uploads/2018/08/green-background.png

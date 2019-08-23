@@ -1,0 +1,39 @@
+<form>
+    <div class="page-header centrado">
+        <h5><b>PRODUCTS</b> </h5>
+        <hr>
+    </div>
+
+    <div class="table-responsive align-content-center">
+        <table class="table">
+            <thead>
+                <tr class="table-success table-bordered  align-content-center">
+                    <td>No</td>
+                    <td>Fecha Siembra</td>
+                    <td>Fecha Cosecha</td>
+                    <td>Nombre del producto</td>
+                    <td>Cantidad Mayoreo</td>
+                    <td>Precio Mayoreo</td>
+                    <td>Precio Menudeo</td>
+                    <td>Cantidad Disponible</td>
+                    <td></td>
+                </tr>
+            </thead>
+            <tbody>
+                <ng-container *ngFor="let product of listProducts; let i = 'index+1'">
+                    <tr>
+                        <td>{{ i }}</td>
+                        <td>{{ product.siembra }}</td>
+                        <td>{{ product.cosecha }}</td>
+                        <td>{{ product.name }}</td>
+                        <td>{{ product.cantidadM }}</td>
+                        <td>{{ product.precioM }} </td>
+                        <td>{{ product.preciom }}</td>
+                        <td>{{ product.cantidad }}</td>
+                        <td><button class="btn btn-outline-success" (click)="navegarARegistro()">Modificar</button></td>
+                    </tr>
+                </ng-container>
+            </tbody>
+        </table>
+    </div>
+</form>

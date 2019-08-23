@@ -7,7 +7,7 @@
             "projectType": "application",
             "schematics": {
                 "@schematics/angular:component": {
-                  "styleext": "scss"
+                    "styleext": "scss"
                 }
             },
             "root": "",
@@ -36,6 +36,7 @@
                             "node_modules/bootstrap/scss/bootstrap.scss",
                             "node_modules/angular-bootstrap-md/assets/scss/mdb.scss",
                             "node_modules/animate.css/animate.css",
+                            "node_modules/ngx-bootstrap/datepicker/bs-datepicker.css",
                             "src/styles.scss"
                         ],
                         "scripts": [

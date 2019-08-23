@@ -1,28 +1,36 @@
 import { MediaMatcher } from '@angular/cdk/layout';
-import { ChangeDetectorRef, Component, OnInit, OnDestroy } from '@angular/core';
+import { ChangeDetectorRef, Component, OnInit } from '@angular/core';
+
+//check animations
+import { RouterOutlet } from '@angular/router';
+import { slideInAnimation } from './animations';
 
 @Component({
   selector: 'app-sidebar',
   templateUrl: './sidebar.component.html',
-  styleUrls: ['./sidebar.component.scss']
+  styleUrls: ['./sidebar.component.scss'],
+
+  //check animations
+  animations: [slideInAnimation]
 })
-export class SidebarComponent implements OnInit/*, OnDestroy*/ {
+export class SidebarComponent implements OnInit {
+  fillerNav = [
+    {name:" Home", route:"dashboard", icon:"home"},
+    {name:" Settings", route:"configuracion", icon:"settings"},
+    {name:" Logout", route:"login", icon:"exit_to_app"}
+  ];
 
-/*  mobileQuery: MediaQueryList;
+  extraNav = [
+    {name:" Help", route:"help", icon:"help"},
+    {name:" About us", route:"about", icon:"info"},
+  ];
 
-  fillerNav = Array.from({length: 50}, (_, i) => `Nav Item ${i + 1}`);
-
-  fillerContent = Array.from({length: 50}, () =>
-      `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-       labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-       laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-       voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-       cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.`);
+  mobileQuery: MediaQueryList;
 
   private _mobileQueryListener: () => void;
 
   constructor(changeDetectorRef: ChangeDetectorRef, media: MediaMatcher) {
-    this.mobileQuery = media.matchMedia('(max-width: 600px)');
+    this.mobileQuery = media.matchMedia('(max-width: 1000px)');
     this._mobileQueryListener = () => changeDetectorRef.detectChanges();
     this.mobileQuery.addListener(this._mobileQueryListener);
   }
@@ -31,8 +39,11 @@ export class SidebarComponent implements OnInit/*, OnDestroy*/ {
     this.mobileQuery.removeListener(this._mobileQueryListener);
   }
 
-  shouldRun = true;*/
-
   ngOnInit(){}
+
+  //check animations
+  prepareRoute(outlet: RouterOutlet) {
+    return outlet && outlet.activatedRouteData && outlet.activatedRouteData['animation'];
+  }
 
 }

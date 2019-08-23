@@ -2,3 +2,56 @@
     font-size: 180%;
     font-weight: bold;
 }
+
+.navbarlogo:focus{
+    outline: none;
+}
+
+.btn-sidebar {
+    color: white;
+    background-color: #4CAF50;
+    border: none;
+    text-decoration: none;
+    transition-duration: 0.5s;
+
+    position: relative;
+    border-radius: 2px;
+    bottom: 3px;
+}
+
+.btn-sidebar:hover {
+    background-color: rgb(55, 129, 58);
+    color: white;
+
+    border-radius: 2px;
+}
+
+.btn-sidebar:focus {
+    outline: none;
+}
+
+@media only screen and (max-width: 720px) and (min-width: 480px)  {  
+    .navbarlogo {
+        font-size: 150%;
+    }
+} 
+
+@media only screen and (max-width: 480px) and (min-width: 320px)  {  
+    .navbarlogo {
+        font-size: 120%;
+    }
+
+    .btn-sidebar {
+        bottom: 2px;
+    }
+} 
+
+@media only screen and (max-width: 320px) and (min-width: 5px)  {  
+    .navbarlogo {
+        font-size: 80%;
+    }
+
+    .btn-sidebar {
+        bottom: 1px;
+    }
+} 

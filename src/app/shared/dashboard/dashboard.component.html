@@ -1,0 +1,53 @@
+<br>
+<div>
+    <table class="table">
+        <tbody>
+            <ng-container *ngFor="let item of items; let i = 'index+1'">
+                <tr>
+                    <td class="td-icon">
+                        <i [class]="item.icon"></i>
+                    </td>
+                    <td class="td-a">
+                        <br>
+                        <a class="text-white a-option" [routerLink]="item.route">
+                            <span>{{ item.name }}</span>
+                        </a>
+                    </td>
+                </tr>
+                <hr class="hr-dash" *ngIf="i < items.length">
+            </ng-container>
+        </tbody>
+    </table>
+</div>
+
+<!--        
+            <tr>
+                <td class="td-icon">
+                    <i class="fas fa-shopping-cart fa-5x icon-option"></i>
+                </td>
+                <td class="td-a">
+                    <br>
+                    <a class="text-white a-option" href="/comprar">Comprar</a>
+                </td>
+            </tr>
+            <hr class="hr-dash">
+            <tr>
+                <td class="td-icon">
+                    <i class="fas fa-file-invoice-dollar fa-5x icon-option"></i>
+                </td>
+                <td class="td-a">
+                    <br>
+                    <a class="text-white a-option" href="/historial">Historial</a>
+                </td>
+            </tr>
+            <hr class="hr-dash">
+            <tr>
+                <td class="td-icon">
+                    <i class="fas fa-cash-register fa-5x icon-option"></i>
+                </td>
+                <td class="td-a">
+                    <br>
+                    <a class="text-white a-option" href="/pedidos">Pedidos</a>
+                </td>
+            </tr>
+        -->  

@@ -1,0 +1,66 @@
+.centrado {
+    text-align: center;
+}
+
+.greeng {
+    background-image: linear-gradient(to right, #3AAD0C 0%, #b4f141 100%);
+}
+
+.active-green-2 input[type=text]:focus:not([readonly]) {
+    border-bottom: 1px solid #07961a;
+    box-shadow: 0 1px 0 0 #07961a;
+}
+
+.active-green input[type=number]:focus:not([readonly]) {
+    border-bottom: 1px solid #07961a;
+    box-shadow: 0 1px 0 0 #07961a;
+}
+
+.active-text-2 input[type=text]:focus:not([readonly])+label {
+    color: #07961a;
+}
+
+.active-text input[type=number]:focus:not([readonly])+label {
+    color: #07961a;
+}
+
+.green-textarea textarea.md-textarea:focus:not([readonly]) {
+    border-bottom: 1px solid #07961a;
+    box-shadow: 0 1px 0 0 #07961a;
+}
+
+.active-green-textarea.md-form label.active {
+    color: #07961a;
+}
+
+.active-green-textarea.md-form textarea.md-textarea:focus:not([readonly])+label {
+    color: #07961a;
+}
+
+p#texto {
+    color: white;
+    text-align: center;
+    align-content: center;
+}
+
+div#div_file {
+    position: relative;
+    width: 200px;
+    padding-top: 15px;
+    height: 50px;
+    background: linear-gradient(to right, #3AAD0C 0%, #b4f141 100%);
+    -webkit-border-radius: 20px;
+    align-content: center;
+}
+
+input#enviar_image {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    text-align: center;
+}

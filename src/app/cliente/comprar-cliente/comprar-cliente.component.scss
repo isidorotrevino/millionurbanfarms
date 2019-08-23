@@ -1,2 +1,24 @@
-p {
+.centrado {
+    text-align: center;
+    align-content: center;
+}
+
+.active-green input[type=text]:focus:not([readonly]) {
+    border-bottom: 1px solid #07961a;
+    box-shadow: 0 1px 0 0 #07961a;
+}
+
+.active-green-2 input[type=number]:focus:not([readonly]) {
+    border-bottom: 1px solid #07961a;
+    box-shadow: 0 1px 0 0 #07961a;
+}
+
+.centrado-table {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.op {
+    color: white;
 }

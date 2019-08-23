@@ -1,6 +1,9 @@
 <header>
     <mdb-navbar SideClass="navbar navbar-expand-lg navbar-dark green" [containerInside]="false">
-        <mdb-navbar-brand><a class="navbar-brand navbarlogo" [routerLink]="['/']">Millionurbanfarms</a></mdb-navbar-brand>
+        <mdb-navbar-brand>
+            <!-- <button mat-icon-button (click)="snav.toggle()"><mat-icon>menu</mat-icon></button> -->
+            <button id="sidebar" hidden="true" class="btn-sidebar" (click)="notify.emit()"><i class="fas fa-bars"></i></button>
+            <a class="navbar-brand navbarlogo" [routerLink]="['/dashboard']">&nbsp; Millionurbanfarms</a>
+        </mdb-navbar-brand>
     </mdb-navbar>
-    <br>
 </header>
