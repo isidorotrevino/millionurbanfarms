@@ -1,0 +1,45 @@
+<form>
+    <br>
+    <div class="page-header centrado">
+        <h5><b>Delivery</b></h5>
+        <hr>
+    </div>
+
+    <div class="table-responsive align-content-center centrado">
+        <ng-container *ngFor="let service of services">
+            <div class="scroll">
+                <table class="table">
+                    <thead>
+                        <tr class="table-success table-bordered align-content-center">
+                            <td>Delivery date</td>
+                            <td>Producer name</td>
+                            <td>Location</td>
+                            <td>Buyer name</td>
+                            <td>Delivery location</td>
+                            <td></td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>{{ service.servicio.fecha }}</td>
+                            <td>{{ service.servicio.productor.name }}</td>
+                            <td>{{ service.servicio.productor.dir }}</td>
+                            <td>{{ service.servicio.comprador.name }}</td>
+                            <td>{{ service.servicio.comprador.dir }}</td>
+                            <td><button class="btn btn-outline-success" (click)="eventoAlert()">Cancelar</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <br>
+
+            <div class="page-header centrado">
+                <h6><b>Route:</b></h6>
+            </div>
+            
+            <div>
+                <img [src]='service.servicio.img' alt="trayecto">
+            </div>
+        </ng-container>
+   </div>
+</form>

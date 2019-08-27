@@ -18,7 +18,6 @@ import { RegisterComponent } from './auth/register/register.component';
 import { FooterComponent } from './shared/footer/footer.component';
 import { NavbarComponent } from './shared/navbar/navbar.component';
 import { SidebarComponent } from './shared/sidebar/sidebar.component';
-import { ProveedorComponent } from './proveedor/proveedor.component';
 import { ProductorComponent } from './productor/productor.component';
 import { InversionistaComponent } from './inversionista/inversionista.component';
 import { ClienteComponent } from './cliente/cliente.component';
@@ -33,6 +32,15 @@ import { FinanciamientoComponent } from './productor/financiamiento/financiamien
 import { PedidosProductorComponent } from './productor/pedidos-productor/pedidos-productor.component';
 import { HistorialProductorComponent } from './productor/historial-productor/historial-productor.component';
 import { ComprarProductorComponent } from './productor/comprar-productor/comprar-productor.component';
+import { HistorialInversionComponent } from './inversionista/historial-inversion/historial-inversion.component';
+import { FinanciamientosComponent } from './inversionista/financiamientos/financiamientos.component';
+import { BienesComponent } from './proveedor-bienes/bienes/bienes.component';
+import { PedidosProveedorBComponent } from './proveedor-bienes/pedidos-proveedor-b/pedidos-proveedor-b.component';
+import { RegistrarBienComponent } from './proveedor-bienes/registrar-bien/registrar-bien.component';
+import { ProveedorServicioComponent } from './proveedor-servicio/proveedor-servicio.component';
+import { RegistrarServicioComponent } from './proveedor-servicio/registrar-servicio/registrar-servicio.component';
+import { ServiciosComponent } from './proveedor-servicio/servicios/servicios.component';
+import { SolicitudesComponent } from './proveedor-servicio/solicitudes/solicitudes.component';
 
 @NgModule({
   declarations: [
@@ -42,7 +50,6 @@ import { ComprarProductorComponent } from './productor/comprar-productor/comprar
     FooterComponent,
     NavbarComponent,
     SidebarComponent,
-    ProveedorComponent,
     ProductorComponent,
     InversionistaComponent,
     ClienteComponent,
@@ -56,7 +63,16 @@ import { ComprarProductorComponent } from './productor/comprar-productor/comprar
     FinanciamientoComponent,
     PedidosProductorComponent,
     HistorialProductorComponent,
-    ComprarProductorComponent
+    ComprarProductorComponent,
+    HistorialInversionComponent,
+    FinanciamientosComponent,
+    BienesComponent,
+    PedidosProveedorBComponent,
+    RegistrarBienComponent,
+    ProveedorServicioComponent,
+    RegistrarServicioComponent,
+    ServiciosComponent,
+    SolicitudesComponent
   ],
   imports: [
     BrowserModule,

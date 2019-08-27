@@ -1,0 +1,61 @@
+<form class="m-5 m-left-5">
+
+    <div class="page-header centrado">
+        <h2><b>Finance it</b></h2>
+        <br>
+    </div>
+
+    <div class="table-responsive centrado ">
+        <table class="table centrado">
+            <tbody>
+                <ng-container *ngFor="let product of listProducts">
+                    <tr>
+                        <td>
+                            <img [src]="product.founding.img" [alt]="product.name" class="img-thumbnail" style="width: 150px">
+                        </td>
+
+                        <td>
+                            <table>
+                                <tr>Producer: {{ product.vendedor.name }}</tr>
+                                <tr>Global Invesment: ${{ product.founding.meta }}</tr>
+                                <tr>Description: {{ product.founding.description }}</tr>
+                                <tr>Seedtime Date: {{ product.siembra }}</tr>
+                                <tr>Interest Percentage: {{ product.founding.interes }}%</tr>
+                                <tr>Invesment Return Time (Days): {{ product.founding.roi }}</tr>
+                            </table>
+                        </td>
+
+                        <td>
+                            <div class="progress">
+                                <div *ngIf='product.founding.meta/product.founding.total <= 4' class="progress-bar progress-bar-1 progress-bar-striped progress-bar-animated active" role="progressbar" aria-valuenow="120" aria-valuemin="0" aria-valuemax="100" style="width:25%">
+                                    <b>25% </b>
+                                    <!-- *[ngif] -->
+                                </div>
+                                <div *ngIf='product.founding.meta/product.founding.total <= 2' class="progress-bar progress-bar-2  progress-bar-striped progress-bar-animated  active" role="progressbar" aria-valuenow="120" aria-valuemin="0" aria-valuemax="100" style="width:25%">
+                                    <b>50%</b>
+                                </div>
+                                <div *ngIf='product.founding.meta/product.founding.total <= 1.33' class="progress-bar progress-bar-3 progress-bar-striped progress-bar-animated  active" role="progressbar" aria-valuenow="120" aria-valuemin="0" aria-valuemax="100" style="width:25%">
+                                    <b>75%</b>
+                                </div>
+                                <div *ngIf='product.founding.meta/product.founding.total <= 1' class="progress-bar progress-bar-4 progress-bar-striped progress-bar-animated  active" role="progressbar" aria-valuenow="120" aria-valuemin="0" aria-valuemax="100" style="width:25%">
+                                    <b>100%</b>
+                                </div>
+                                <br>
+                            </div>
+                            <tr>Days Left: {{ product.founding.days }} days</tr>
+                            <tr>
+                                <div class="md-form form-group  active-text active-green">
+                                    <input mdbInput type="number" class="form-control" id="name">
+                                    <label for="name">Amount Invested $$$</label>
+                                </div>
+                            </tr>
+                            <tr><button class="btn btn-outline-success centrado m-2" style="border-radius: 15px" type="submit" (click)="EventoAlert()">FINANCE</button>
+                                <button type="reset" class="btn btn-outline-success centrado" style="border-radius: 15px">CANCEL</button></tr>
+                        </td>
+                    </tr>
+                </ng-container>
+            </tbody>
+        </table>
+        <hr>
+    </div>
+</form>

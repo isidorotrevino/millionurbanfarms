@@ -1,0 +1,39 @@
+<form class="m-2 m-left-2">
+    <div class="page-header centrado">
+        <h2><b>ORDERS</b></h2>
+        <hr>
+        <br>
+    </div>
+
+    <div class="table-responsive centrado">
+        <table class="table">
+            <thead>
+                <tr class="table-success">
+                    <td><b>No</b></td>
+                    <td><b>PRODUCT NAME</b></td>
+                    <td><b>CLIENT</b></td>
+                    <td><b>REQUEST DATE</b></td>
+                    <td><b>STATUS</b></td>
+                    <td><b>ESTIMATED DELIVERY DATE</b></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </thead>
+            <tbody>
+                <ng-container *ngFor="let product of listProducts; let i = 'index+1'">
+                    <tr>
+                        <td>{{ i }}</td>
+                        <td>{{ product.name }}</td>
+                        <td>{{ product.comprador.name }}</td>
+                        <td>{{ product.comprador.request }}</td>
+                        <td>{{ product.comprador.status }}</td>
+                        <td>{{ product.comprador.estimado }}</td>
+                        <td><button type="reset" class="btn btn-outline-success" (click)="eventoAlert1()">CANCEL ORDER</button></td>
+                        <td><button type="reset" class="btn btn-outline-success" (click)="eventoAlert()">DELETE</button></td>
+                    </tr>
+                </ng-container>
+            </tbody>
+        </table>
+    </div>
+</form>
+<br>

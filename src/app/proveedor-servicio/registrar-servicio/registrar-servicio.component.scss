@@ -1,0 +1,21 @@
+.greeng {
+    background-image: linear-gradient(to right, #3AAD0C 0%, #b4f141 100%);
+}
+
+.active-green-2 input[type=text]:focus:not([readonly]) {
+    border-bottom: 1px solid #07961a;
+    box-shadow: 0 1px 0 0 #07961a;
+}
+
+.active-text-2 input[type=text]:focus:not([readonly])+label {
+    color: #07961a;
+}
+
+.centrado {
+    text-align: center;
+}
+
+.green-border-focus .form-control:focus:not([readonly]) {
+    border: 1px solid #8bc34a;
+    box-shadow: 0 0 0 0.2rem rgba(139, 195, 74, .25);
+}

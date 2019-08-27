@@ -1,0 +1,36 @@
+<form>
+    <br>
+    <div class="page-header centrado">
+        <h5><b>PRODUCTS</b></h5>
+        <hr>
+    </div>
+
+    <div class="table-responsive align-content-center">
+        <table class="table">
+            <thead>
+                <tr class="table-success table-bordered align-content-center">
+                    <td><b>No</b></td>
+                    <td><b>TYPE</b></td>
+                    <td><b>DESCRIPTION</b></td>
+                    <td><b>PLATES</b></td>
+                    <td><b>STATUS</b></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </thead>
+            <tbody>
+                <ng-container *ngFor="let service of listServices; let i='index+1'">
+                    <tr>
+                        <td>{{ i }}</td>
+                        <td>{{ service.type }}</td>
+                        <td>{{ service.description }}</td>
+                        <td>{{ service.placas }}</td>
+                        <td>{{ service.status }}</td>
+                        <td><button class="btn btn-outline-success" (click)="navegarARegistro()">UPDATE</button></td>
+                        <td><button type="reset" class="btn btn-outline-success" (click)="eventoAlert()">DELETE</button></td>
+                    </tr>
+                </ng-container>
+            </tbody>
+        </table>
+    </div>
+</form>

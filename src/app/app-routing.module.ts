@@ -13,6 +13,14 @@ import { FinanciamientoComponent } from './productor/financiamiento/financiamien
 import { PedidosProductorComponent } from './productor/pedidos-productor/pedidos-productor.component';
 import { HistorialProductorComponent } from './productor/historial-productor/historial-productor.component';
 import { ComprarProductorComponent } from './productor/comprar-productor/comprar-productor.component';
+import { HistorialInversionComponent } from './inversionista/historial-inversion/historial-inversion.component';
+import { FinanciamientosComponent } from './inversionista/financiamientos/financiamientos.component';
+import { RegistrarBienComponent } from './proveedor-bienes/registrar-bien/registrar-bien.component';
+import { PedidosProveedorBComponent } from './proveedor-bienes/pedidos-proveedor-b/pedidos-proveedor-b.component';
+import { BienesComponent } from './proveedor-bienes/bienes/bienes.component';
+import { RegistrarServicioComponent } from './proveedor-servicio/registrar-servicio/registrar-servicio.component';
+import { ServiciosComponent } from './proveedor-servicio/servicios/servicios.component';
+import { SolicitudesComponent } from './proveedor-servicio/solicitudes/solicitudes.component';
 
 
 const routes: Routes = [
@@ -29,6 +37,14 @@ const routes: Routes = [
   { path: 'pedidos_productor', component: PedidosProductorComponent },
   { path: 'historial_productor', component: HistorialProductorComponent },
   { path: 'comprar_productor', component: ComprarProductorComponent },
+  { path: 'financiar_cosecha', component: FinanciamientosComponent },
+  { path: 'historial_inversiones', component: HistorialInversionComponent },
+  { path: 'registrar_bien', component: RegistrarBienComponent },
+  { path: 'pedidos_proveedor_bien', component: PedidosProveedorBComponent },
+  { path: 'productos_bien', component: BienesComponent },
+  { path: 'registrar_servicio', component: RegistrarServicioComponent },
+  { path: 'servicios', component: ServiciosComponent },
+  { path: 'solicitudes', component: SolicitudesComponent },
   { path: '', component: LoginComponent }
 ];
 

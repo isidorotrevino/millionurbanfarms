@@ -1,0 +1,40 @@
+.centrado {
+    text-align: center;
+    align-content: center;
+}
+
+.progress-bar-1 {
+    background-color: rgb(255, 49, 49);
+}
+
+.progress-bar-2 {
+    background-color: rgb(247, 139, 52);
+}
+
+.progress-bar-3 {
+    background-color: rgb(252, 252, 72);
+}
+
+.progress-bar-4 {
+    background-color: rgb(85, 252, 70);
+}
+
+.active-green input[type=number]:focus:not([readonly]) {
+    border-bottom: 1px solid #07961a;
+    box-shadow: 0 1px 0 0 #07961a;
+}
+
+.active-text input[type=number]:focus:not([readonly])+label {
+    color: #07961a;
+}
+
+table tr {
+    text-align: left;
+    align-content: left;
+    align-items: left;
+}
+
+table td {
+    text-align: left;
+    align-content: left;
+}

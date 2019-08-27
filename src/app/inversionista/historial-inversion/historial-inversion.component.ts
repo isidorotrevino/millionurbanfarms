@@ -1,27 +1,22 @@
 import { Component, OnInit } from '@angular/core';
 import { StorageService } from 'src/app/storage/storage.service';
-import { Router } from '@angular/router';
 import Swal from 'sweetalert2';
 
 @Component({
-  selector: 'app-productos',
-  templateUrl: './productos.component.html',
-  styleUrls: ['./productos.component.scss']
+  selector: 'app-historial-inversion',
+  templateUrl: './historial-inversion.component.html',
+  styleUrls: ['./historial-inversion.component.scss']
 })
-export class ProductosComponent implements OnInit {
-  listProducts = [];
+export class HistorialInversionComponent implements OnInit {
+  fundings = [];
 
-  constructor(private router: Router, private storageService: StorageService) { }
+  constructor(private storageService: StorageService) { }
 
   ngOnInit() {
-    this.listProducts.push((this.storageService.getProducts())[0]);
+    this.fundings = this.storageService.getFundigs();
   }
 
-  navegarARegistro(){
-    this.router.navigate(['registrar_producto']);
-  }
-
-  eventoAlert(){
+  eventAlert(){
     Swal.fire(
       {
         title: 'Are you sure?',

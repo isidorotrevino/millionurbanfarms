@@ -1,24 +1,24 @@
 import { Component, OnInit } from '@angular/core';
-import { StorageService } from 'src/app/storage/storage.service';
 import { Router } from '@angular/router';
+import { StorageService } from 'src/app/storage/storage.service';
 import Swal from 'sweetalert2';
 
 @Component({
-  selector: 'app-productos',
-  templateUrl: './productos.component.html',
-  styleUrls: ['./productos.component.scss']
+  selector: 'app-bienes',
+  templateUrl: './bienes.component.html',
+  styleUrls: ['./bienes.component.scss']
 })
-export class ProductosComponent implements OnInit {
+export class BienesComponent implements OnInit {
   listProducts = [];
 
-  constructor(private router: Router, private storageService: StorageService) { }
+  constructor(private storageService:StorageService, private router: Router) { }
 
   ngOnInit() {
-    this.listProducts.push((this.storageService.getProducts())[0]);
+    this.listProducts = this.storageService.filterByVendedorProductsSiembra("Lechugas");
   }
 
-  navegarARegistro(){
-    this.router.navigate(['registrar_producto']);
+  navegarARegistro() {
+    this.router.navigate(['registrar_bien']);
   }
 
   eventoAlert(){

@@ -13,7 +13,7 @@ export class ComprarProductorComponent implements OnInit {
   constructor(private storageService: StorageService) { }
 
   ngOnInit() {
-    this.listProducts = this.storageService.getProducts();
+    this.listProducts = this.storageService.getProductsSiembra();
   }
 
   EventoAlert() {

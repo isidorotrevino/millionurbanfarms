@@ -4,21 +4,27 @@
         <h2><b>PURCHASE STATUS</b></h2>
     </div>
 
-    <ng-container *ngFor="let product of listProducts">
-        <div class="table-responsive">
-            <table class="table">
-                <tbody>
+    
+    <div class="table-responsive">
+        <table class="table">
+            <tbody>
+                <ng-container *ngFor="let product of listProducts">
                     <tr>
                         <td> <img [src]="product.img" alt="lechuga" class="img-thumbnail" style="width: 200px"></td>
                         <td>
                             <table>
-                                <tr>Product: {{ product.name }}</tr>
+                                <tr>Product Name: {{ product.name }}</tr>
                                 <tr><b>Status: {{ product.status }}</b></tr>
+                                <tr>Meansurement: {{ product.medida }}</tr>
+                                <tr>Price: ${{ product.preciom }}</tr>
+                                <tr>Units: {{ product.comprador.cantidad }} {{ product.medida }}s</tr>
                             </table>
                         </td>
                     </tr>
-                </tbody>
-            </table>
-        </div>
-    </ng-container>
+                </ng-container>
+            </tbody>
+        </table>
+    </div>
+    
+
 </form>

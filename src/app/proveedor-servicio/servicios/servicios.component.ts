@@ -1,24 +1,25 @@
 import { Component, OnInit } from '@angular/core';
-import { StorageService } from 'src/app/storage/storage.service';
 import { Router } from '@angular/router';
+import { StorageService } from 'src/app/storage/storage.service';
 import Swal from 'sweetalert2';
 
-@Component({
-  selector: 'app-productos',
-  templateUrl: './productos.component.html',
-  styleUrls: ['./productos.component.scss']
-})
-export class ProductosComponent implements OnInit {
-  listProducts = [];
 
-  constructor(private router: Router, private storageService: StorageService) { }
+@Component({
+  selector: 'app-servicios',
+  templateUrl: './servicios.component.html',
+  styleUrls: ['./servicios.component.scss']
+})
+export class ServiciosComponent implements OnInit {
+  listServices = [];
+
+  constructor(private storageService:StorageService, private router: Router) { }
 
   ngOnInit() {
-    this.listProducts.push((this.storageService.getProducts())[0]);
+    this.listServices = this.storageService.filterByVendedorServices("Entregueitor12");
   }
 
-  navegarARegistro(){
-    this.router.navigate(['registrar_producto']);
+  navegarARegistro() {
+    this.router.navigate(['registrar_servicio']);
   }
 
   eventoAlert(){

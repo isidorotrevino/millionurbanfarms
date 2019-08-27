@@ -1,0 +1,44 @@
+<form class="m-2 m-left-2">
+
+    <div class="page-header centrado">
+        <h5><b>REGISTER YOUR SERVICE</b> </h5>
+        <hr>
+        <br>
+    </div>
+
+    <label>Choose a transport: </label>
+    <div class="md-form mt-1  green-border-focus">
+        <select class="selectpicker form-control" id="tipo">
+                <option></option>
+                <option>Bike</option>
+                <option>Motorbike</option>
+                <option>Car</option>
+                <option>Van</option>
+            </select>
+    </div>
+
+    <div class="md-form mt-1 active-green-2 active-text-2 ">
+        <input mdbInput type="text" class="form-control" id="descripcion">
+        <label for="descripcion ">Description</label>
+    </div>
+
+    <div class="md-form mt-1 active-green-2 active-text-2 ">
+        <input mdbInput type="text" class="form-control" id="placas">
+        <label for="placas ">Plates</label>
+    </div>
+
+    <label>Status: </label>
+    <div class="md-form mt-1  green-border-focus">
+        <select class="selectpicker form-control" id="status">
+                <option></option>
+                <option>Active</option>
+                <option>Inactive</option>
+            </select>
+    </div>
+
+    <hr>
+    <br>
+    <button type="" class="btn btn-outline-success mr-2 " (click)="EventoAlert()" style="border-radius: 15px "><i class="fa fa-save "></i>SAVE</button>
+    <button type="reset" class="btn btn-outline-success " style="border-radius: 15px ">CANCEL</button>
+    <br>
+</form>

@@ -10,7 +10,7 @@
             <thead>
                 <tr class="table-success table-bordered">
                     <td><b>No</b></td>
-                    <td><b>PRODUCT</b></td>
+                    <td><b>PRODUCT NAME</b></td>
                     <td><b>PRODUCER</b></td>
                     <td><b>REQUEST DATE</b></td>
                     <td><b>DELIVERY DATE</b></td>
@@ -18,14 +18,16 @@
                 </tr>
             </thead>
             <tbody>
-                <tr>
-                    <td>1</td>
-                    <td>Lettuce</td>
-                    <td>Juan Perez</td>
-                    <td>19-08-2019</td>
-                    <td>22-08-2019</td>
-                    <td><button class="btn btn-outline-success">DELETE</button></td>
-                </tr>
+                <ng-container *ngFor="let listCompras of products; let i = 'index + 1' ">
+                    <tr>
+                        <td>{{i}}</td>
+                        <td>{{listCompras.name}}</td>
+                        <td>{{listCompras.vendedor.name}}</td>
+                        <td>{{listCompras.comprador.request}}</td>
+                        <td>{{listCompras.comprador.estimado}}</td>
+                        <td><button type="reset" class="btn btn-outline-success" (click)="EventoAlert()">DELETE</button></td>
+                    </tr>
+                </ng-container>
             </tbody>
         </table>
     </div>

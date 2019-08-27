@@ -1,0 +1,40 @@
+<form class="m-2 m-left-2">
+    <div class="page-header centrado">
+        <h2><b>FUNDINGS</b></h2>
+        <br>
+        <hr>
+    </div>
+
+    <div class="table-responsive">
+        <table class="table">
+            <thead>
+                <tr class="table-success table-bordered ">
+                    <td><b>No</b></td>
+                    <td><b>PRODUCER</b></td>
+                    <td><b>SEEDTIME DATE</b></td>
+                    <td><b>AMOUNT INVESTED </b></td>
+                    <td><b>INTEREST PERCENTAGE</b></td>
+                    <td><b>INVESTMENT RETURN TIME (Days)</b></td>
+                    <td><b>STATUS</b></td>
+                    <td></td>
+                </tr>
+            </thead>
+            <tbody>
+                <ng-container *ngFor="let funding of fundings; let i = 'index+1'">
+                    <tr>
+                        <td>{{ i }}</td>
+                        <td>{{ funding.producer }}</td>
+                        <td>{{ funding.siembra }}</td>
+                        <td>{{ funding.invertido }}</td>
+                        <td>{{ funding.interes }} %</td>
+                        <td>{{ funding.roi }}</td>
+                        <td>{{ funding.status }}</td>
+
+                        <td><button type="reset" class="btn btn-outline-success" (click)="eventAlert()">DELETE</button></td>
+                    </tr>
+                </ng-container>
+            </tbody>
+        </table>
+    </div>
+    <br>
+</form>
