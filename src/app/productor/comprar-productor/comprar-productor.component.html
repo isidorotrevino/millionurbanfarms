@@ -3,7 +3,7 @@
         <h2><b>CLOSE TO YOUR HOME </b></h2>
         <hr>
         <br>
-    
+
     </div>
     <div class="input-group mb-1 active-green centrado">
         <div class="input-group md-form">
@@ -18,11 +18,12 @@
         </div>
     </div>
 </form>
-    
-<ng-container *ngFor="let product of listProducts">
-    <div class="table-responsive">
-        <table class="table centrado-table">
-            <tbody>
+
+
+<div class="table-responsive">
+    <table class="table centrado-table">
+        <tbody>
+            <ng-container *ngFor="let product of listProducts; let i ='index+1'">
                 <tr>
                     <td>
                         <table>
@@ -34,8 +35,8 @@
                                         <button class=" btn btn-success btn-sm " type="submit" (click)="EventoAlert()">BUY!</button>
                                     </div>
                                     <div class="custom-control custom-checkbox checkbox-success">
-                                        <input type="checkbox" class="custom-control-input " id="defaultUnchecked">
-                                        <label class="custom-control-label" for="defaultUnchecked">Picker Up</label>
+                                        <input type="checkbox" class="custom-control-input " [id]='product.name+i'>
+                                        <label class="custom-control-label" [for]='product.name+i'>Picker Up</label>
                                     </div>
                                 </div>
                             </tr>
@@ -65,7 +66,7 @@
                         </table>
                     </td>
                 </tr>
-            </tbody>
-        </table>
-    </div>
-</ng-container>
+            </ng-container>
+        </tbody>
+    </table>
+</div>
