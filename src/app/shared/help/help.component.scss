@@ -1,0 +1,82 @@
+.centrado {
+    text-align: center;
+    align-content: center;
+    align-items: center;
+}
+
+.font {
+    font-weight: bold;
+}
+
+.greeng {
+    background: linear-gradient(to right, #3AAD0C 0%, #b4f141 100%);
+}
+
+.intro-header {
+    height: unset !important;
+}
+
+.intro-2 {
+    background: url("https://techmoka.com/wp-content/uploads/2018/03/Web-%C3%A9cologie-1.png")no-repeat center center;
+    background-size: 100% 100%;
+}
+
+.view {
+    height: 100vh !important;
+}
+
+.full-bg-img {
+    height: 100%;
+}
+
+.card {
+    background-color: rgba(229, 228, 255, 0);
+}
+
+.md-form .prefix {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+}
+
+.md-form label {
+    color: black;
+    font-weight: bold;
+}
+
+h6 {
+    line-height: 1.7;
+}
+
+.container {
+    width: 100%;
+    opacity: 1;
+}
+
+@media (max-width: 740px) {
+    .full-height,
+    .full-height body,
+    .full-height header,
+    .full-height header .view {
+        height: 1040px;
+    }
+}
+
+.active-green input[type=text]:focus:not([readonly]) {
+    border-bottom: 1px solid black;
+    box-shadow: 0 1px 0 0 black;
+}
+
+.text input[type=text]:focus:not([readonly])+label {
+    color: black;
+    font-weight: bold;
+}
+
+.activearea textarea[type=text]:focus:not([readonly]) {
+    border-bottom: 1px solid black;
+    box-shadow: 0 1px 0 0 black;
+}
+
+.textarea textarea[type=text]:focus:not([readonly])+label {
+    color: black;
+    font-weight: bold;
+}

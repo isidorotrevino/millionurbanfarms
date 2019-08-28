@@ -3,6 +3,10 @@
     align-content: center;
 }
 
+.font {
+    font-weight: bold;
+}
+
 .greeng {
     background-image: linear-gradient(to right, #3AAD0C 0%, #b4f141 100%);
 }
@@ -10,6 +14,7 @@
 .active-green input[type=text]:focus:not([readonly]) {
     border-bottom: 1px solid #07961a;
     box-shadow: 0 1px 0 0 #07961a;
+    text-emphasis-color: #07961a;
 }
 
 .active-green-2 input[type=number]:focus:not([readonly]) {

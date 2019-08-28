@@ -15,14 +15,14 @@ import { slideInAnimation } from './animations';
 })
 export class SidebarComponent implements OnInit {
   fillerNav = [
-    {name:" Home", route:"dashboard", icon:"home"},
-    {name:" Settings", route:"configuracion", icon:"settings"},
-    {name:" Logout", route:"login", icon:"exit_to_app"}
+    {name:" Home", route:'dashboard', icon:"home"},
+    {name:" Settings", route:"settings", icon:"settings"},
+    {name:" Logout", route:'login', icon:"exit_to_app"}
   ];
 
   extraNav = [
     {name:" Help", route:"help", icon:"help"},
-    {name:" About us", route:"about", icon:"info"},
+    {name:" About us" , route:'about_us', icon:"info"},
   ];
 
   mobileQuery: MediaQueryList;

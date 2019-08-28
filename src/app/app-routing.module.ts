@@ -21,6 +21,9 @@ import { BienesComponent } from './proveedor-bienes/bienes/bienes.component';
 import { RegistrarServicioComponent } from './proveedor-servicio/registrar-servicio/registrar-servicio.component';
 import { ServiciosComponent } from './proveedor-servicio/servicios/servicios.component';
 import { SolicitudesComponent } from './proveedor-servicio/solicitudes/solicitudes.component';
+import { AboutUsComponent } from './shared/about-us/about-us.component';
+import { HelpComponent } from './shared/help/help.component';
+import { SettingsComponent } from './shared/settings/settings.component';
 
 
 const routes: Routes = [
@@ -45,6 +48,9 @@ const routes: Routes = [
   { path: 'registrar_servicio', component: RegistrarServicioComponent },
   { path: 'servicios', component: ServiciosComponent },
   { path: 'solicitudes', component: SolicitudesComponent },
+  { path: 'about_us', component: AboutUsComponent},
+  { path: 'help', component: HelpComponent},
+  { path: 'settings', component: SettingsComponent},
   { path: '', component: LoginComponent }
 ];
 

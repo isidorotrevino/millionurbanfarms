@@ -1,33 +1,33 @@
 <div [class.example-is-mobile]="mobileQuery.matches">
 
     <app-navbar (notify)="snav.toggle()"></app-navbar>
-    
+
     <mat-sidenav-container [style.marginTop.px]="mobileQuery.matches ? 0 : 0">
-      <mat-sidenav class="sidenav" #snav [mode]="mobileQuery.matches ? 'over' : 'side'" [fixedInViewport]="mobileQuery.matches" fixedTopGap="0">
-        <div class="top-sidebar">
-          <mat-icon class="icon-top-sidebar">account_circle</mat-icon>
-          <p class="font-top-sidebar">Hi, user.</p>
-        </div>
-        <mat-nav-list>
-          <a mat-list-item *ngFor="let nav of fillerNav" [routerLink]="nav.route" (click)="snav.toggle()">
-            <mat-icon class="icono">{{nav.icon}}</mat-icon> {{nav.name}}
-          </a>
-        </mat-nav-list>
-        <hr>
-        <mat-nav-list>
-          <a mat-list-item *ngFor="let extra of extraNav" [routerLink]="extra.route" (click)="snav.toggle()">
-            <mat-icon class="icono">{{extra.icon}}</mat-icon> {{extra.name}}
-          </a>
-        </mat-nav-list>
-      </mat-sidenav>
-  
-      <mat-sidenav-content class="sidenav-content">
-          <!-- check animations -->
-          <div class="container-scroller" [@routeAnimations]="prepareRoute(outlet)">
-              <router-outlet #outlet="outlet"></router-outlet>
-              <app-footer></app-footer>
-          </div>
-      </mat-sidenav-content>
+        <mat-sidenav class="sidenav" #snav [mode]="mobileQuery.matches ? 'over' : 'side'" [fixedInViewport]="mobileQuery.matches" fixedTopGap="0">
+            <div class="top-sidebar">
+                <mat-icon class="icon-top-sidebar">account_circle</mat-icon>
+                <p class="font-top-sidebar">Hi, user.</p>
+            </div>
+            <mat-nav-list>
+                <a mat-list-item *ngFor="let nav of fillerNav" [routerLink]="nav.route" (click)="snav.toggle()">
+                    <mat-icon class="icono">{{nav.icon}}</mat-icon> {{nav.name}}
+                </a>
+            </mat-nav-list>
+            <hr>
+            <mat-nav-list>
+                <a mat-list-item *ngFor="let extra of extraNav" [routerLink]="extra.route" (click)="snav.toggle()">
+                    <mat-icon class="icono">{{extra.icon}}</mat-icon> {{extra.name}}
+                </a>
+            </mat-nav-list>
+        </mat-sidenav>
+
+        <mat-sidenav-content class="sidenav-content">
+            <!-- check animations -->
+            <div class="container-scroller" [@routeAnimations]="prepareRoute(outlet)">
+                <router-outlet #outlet="outlet"></router-outlet>
+                <app-footer></app-footer>
+            </div>
+        </mat-sidenav-content>
     </mat-sidenav-container>
 
 </div>

@@ -41,6 +41,9 @@ import { ProveedorServicioComponent } from './proveedor-servicio/proveedor-servi
 import { RegistrarServicioComponent } from './proveedor-servicio/registrar-servicio/registrar-servicio.component';
 import { ServiciosComponent } from './proveedor-servicio/servicios/servicios.component';
 import { SolicitudesComponent } from './proveedor-servicio/solicitudes/solicitudes.component';
+import { AboutUsComponent } from './shared/about-us/about-us.component';
+import { HelpComponent } from './shared/help/help.component';
+import { SettingsComponent } from './shared/settings/settings.component';
 
 @NgModule({
   declarations: [
@@ -72,7 +75,10 @@ import { SolicitudesComponent } from './proveedor-servicio/solicitudes/solicitud
     ProveedorServicioComponent,
     RegistrarServicioComponent,
     ServiciosComponent,
-    SolicitudesComponent
+    SolicitudesComponent,
+    AboutUsComponent,
+    HelpComponent,
+    SettingsComponent
   ],
   imports: [
     BrowserModule,

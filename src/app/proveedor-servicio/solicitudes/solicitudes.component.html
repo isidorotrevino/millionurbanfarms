@@ -1,7 +1,9 @@
-<form>
+<form class="m-2 m-left-2">
     <br>
     <div class="page-header centrado">
-        <h5><b>Delivery</b></h5>
+        <br>
+        <h2 class="font">DELIVERY</h2>
+        <br>
         <hr>
     </div>
 
@@ -11,11 +13,11 @@
                 <table class="table">
                     <thead>
                         <tr class="table-success table-bordered align-content-center">
-                            <td>Delivery date</td>
-                            <td>Producer name</td>
-                            <td>Location</td>
-                            <td>Buyer name</td>
-                            <td>Delivery location</td>
+                            <td><b>DELIVERY DATE</b></td>
+                            <td><b>PRODUCER NAME</b></td>
+                            <td><b>LOCATION</b></td>
+                            <td><b>BUYER NAME</b></td>
+                            <td><b>DELIVERY LOCATION</b></td>
                             <td></td>
                         </tr>
                     </thead>
@@ -26,7 +28,7 @@
                             <td>{{ service.servicio.productor.dir }}</td>
                             <td>{{ service.servicio.comprador.name }}</td>
                             <td>{{ service.servicio.comprador.dir }}</td>
-                            <td><button class="btn btn-outline-success" (click)="eventoAlert()">Cancelar</button></td>
+                            <td><button class="btn btn-outline-success" (click)="eventoAlert()">CANCEL</button></td>
                         </tr>
                     </tbody>
                 </table>
@@ -36,10 +38,10 @@
             <div class="page-header centrado">
                 <h6><b>Route:</b></h6>
             </div>
-            
+
             <div>
                 <img [src]='service.servicio.img' alt="trayecto">
             </div>
         </ng-container>
-   </div>
+    </div>
 </form>

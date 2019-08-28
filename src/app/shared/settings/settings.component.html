@@ -1,0 +1,28 @@
+<form class="m-2 m-left-2">
+
+    <div class="page-header centrado">
+        <h2><b>SETTINGS</b></h2>
+        <br>
+    </div>
+
+    <div class="table-responsive">
+        <table class="table">
+            <tbody>
+                <ng-container *ngFor='let setting of settings'>
+                    <tr>
+                        <td class="option">
+                            {{ setting.description }}
+                        </td>
+                        <td>
+                            <label class="switch">
+                                <input [name]="setting.name" type="checkbox" value="true" [checked]="setting.checked == 'true'">
+                                <span class="slider round"></span>
+                            </label>
+                        </td>
+                    </tr>
+                </ng-container>
+            </tbody>
+        </table>
+    </div>
+
+</form>
