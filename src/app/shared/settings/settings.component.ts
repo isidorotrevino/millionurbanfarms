@@ -12,8 +12,8 @@ export class SettingsComponent implements OnInit {
 
   ngOnInit() {
     this.settings = [
-      { name: "notify-compra", description: "Notificarme cuando realice una compra", checked: "true" },
-      { name: "notify-venta", description: "Notificarme cuando realice una venta", checked: "false" }
+      { name: "notify-compra", description: "Notify me when I make a purchase", checked: "true" },
+      { name: "notify-venta", description: "Notify me when an order is lifted", checked: "false" }
     ]
   }
 
