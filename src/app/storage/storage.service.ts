@@ -33,7 +33,7 @@ export class StorageService {
         meta: 10000, description: "Special Harvest", img: "../../assets/img/huerto-10.jpg",
         inversors: 3, total: 5000, days: 5, interes: 3, roi: 30
       },
-      status: "Progress",
+      status: "In Progress",
       comprador: {
         name: "Jose Ortiz", request: "14-09-2019",estimado: "25-09-2019",
         cantidad: 5
@@ -135,7 +135,7 @@ export class StorageService {
       preciom: 18, siembra: "01-09-2019", cosecha: "10-10-2019", img: "../../assets/img/Lechuga Alexandria.jpg",
       vendedor: { name: "Espiloconacas", edad: 27 },
       founding: { 
-        meta: 60000, description: "1kg per spinach approximately", img: "../../assets/img/huerto-1.jpg",
+        meta: 60000, description: "1kg per Letucce Alexandria approximately", img: "../../assets/img/huerto-1.jpg",
         inversors: 8, total: 30000, days: 2, interes: 3, roi: 30
       },
       status: "Delivery",
@@ -150,10 +150,10 @@ export class StorageService {
       preciom: 20, siembra: "02-09-2019", cosecha: "11-10-2019", img: "../../assets/img/Lechuga Rouxaï.jpg",
       vendedor: { name: "HombreModelo", edad: 48 },
       founding: { 
-        meta: 80000, description: "Clean spinach, from the space to your home", img: "../../assets/img/huerto-2.jpg",
+        meta: 80000, description: "Clean Lechuga Rouxaï, from the space to your home", img: "../../assets/img/huerto-2.jpg",
         inversors: 3, total: 70000, days: 6, interes: 10, roi: 30
       },
-      status: "Progress",
+      status: "In Progress",
       comprador: {
         name: "Juan Gutierrez", request: "25-08-2019",estimado: "26-08-2019",
         cantidad: 7
@@ -167,7 +167,7 @@ export class StorageService {
         meta: 80000, description: "Clean spinach, from the space to your home", img: "../../assets/img/huerto-3.jpg",
         inversors: 3, total: 70000, days: 6, interes: 10, roi: 30
       },
-      status: "Progress",
+      status: "In Progress",
       comprador: {
         name: "Juan Gutierrez", request: "25-08-2019",estimado: "26-08-2019",
         cantidad: 7
@@ -268,7 +268,7 @@ export class StorageService {
       status: "Handed",
       comprador: {
         name: "Jose Ortiz", cantidad: 3, request: "23-08-2019", 
-        status: "Progress", estimado: "23-09-2019"
+        status: "In Progress", estimado: "23-09-2019"
       }
     }
   ];
@@ -311,7 +311,7 @@ export class StorageService {
       interes: 3, roi: 15, status: "Canceled" 
     },
     { producer: "Jorge Chavez", siembra: "25-10-2019", invertido: 1000,
-      interes: 10, roi: 60, status: "Progress" 
+      interes: 10, roi: 60, status: "In Progress" 
     },
     { producer: "Ana Ortega", siembra: "10-10-2019", invertido: 5000,
       interes: 15, roi: 90, status: "Canceled" 

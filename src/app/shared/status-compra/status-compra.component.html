@@ -17,9 +17,9 @@
                             <table>
                                 <tr>Product Name: {{ product.name }}</tr>
                                 <tr><b>Status: {{ product.status }}</b></tr>
-                                <tr>Meansurement: {{ product.medida }}</tr>
-                                <tr>Price: ${{ product.preciom }}</tr>
-                                <tr>Units: {{ product.comprador.cantidad }} {{ product.medida }}s</tr>
+                                <tr>Unit: {{ product.medida }}</tr>
+                                <tr>Price: ${{ product.preciom }} USD</tr>
+                                <tr>Quantity: {{ product.comprador.cantidad }} {{ product.medida }}s</tr>
                             </table>
                         </td>
                     </tr>

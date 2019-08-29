@@ -31,12 +31,12 @@
                                 <img [src]='product.img' alt="lechuga" class="img-thumbnail" style="width: 200px">
                                 <div class="form-row">
                                     <div class="input-group active-green-2">
-                                        <input type="number" class="form-control" placeholder="Unit" style="width:50px">
+                                        <input type="number" class="form-control" placeholder="Quantity" style="width:50px">
                                         <button class=" btn btn-success btn-sm " type="submit" (click)="EventoAlert()">BUY!</button>
                                     </div>
                                     <div class="custom-control custom-checkbox checkbox-success">
                                         <input type="checkbox" class="custom-control-input " [id]='product.name+i'>
-                                        <label class="custom-control-label" [for]='product.name+i'>Picker Up</label>
+                                        <label class="custom-control-label" [for]='product.name+i'>Pick Up</label>
                                     </div>
                                 </div>
                             </tr>
@@ -55,10 +55,10 @@
                     <td>
                         <table>
                             <tr>
-                                <td>Meansurement: {{ product.medida }}</td>
+                                <td>Unit: {{ product.medida }}</td>
                             </tr>
                             <tr>
-                                <td>Price: {{ product.preciom }}</td>
+                                <td>Price: {{ product.preciom }} USD</td>
                             </tr>
                             <tr>
                                 <td>Units available: {{ product.cantidad }} </td>
