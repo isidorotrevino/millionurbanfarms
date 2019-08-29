@@ -30,7 +30,7 @@ export class StorageService {
       preciom: 25, siembra: "30-08-2019", cosecha: "30-09-2019", img: '../../assets/img/Acelga Rainbow.jpg',
       vendedor: { name: "Jitomatero2884", edad: 38 },
       founding: { 
-        meta: 10000, description: "Special Harvest", img: "https://www.eluniversal.com.mx/sites/default/files/styles/f03-651x400/public/2019/03/27/como_hacer_un_huerto_casero_el_universal_istock.jpg?itok=bd1Mp0Ej",
+        meta: 10000, description: "Special Harvest", img: "../../assets/img/huerto-10.jpg",
         inversors: 3, total: 5000, days: 5, interes: 3, roi: 30
       },
       status: "Progress",
@@ -45,7 +45,7 @@ export class StorageService {
       preciom: 26, siembra: "01-09-2019", cosecha: "05-10-2019", img: '../../assets/img/Albahaca Verde.jpg',
       vendedor: { name: "Lucio22", edad: 28 },
       founding: { 
-        meta: 20000, description: "Big and special, like me", img: "https://www.eluniversal.com.mx/sites/default/files/styles/f03-651x400/public/2019/03/27/como_hacer_un_huerto_casero_el_universal_istock.jpg?itok=bd1Mp0Ej",
+        meta: 20000, description: "Big and special, like me", img: "../../assets/img/huerto-9.jpg",
         inversors: 10, total: 19000, days: 7, interes: 5, roi: 30
       },
       status: "Delivery",
@@ -60,7 +60,7 @@ export class StorageService {
       preciom: 20, siembra: "31-08-2019", cosecha: "03-09-2019", img: '../../assets/img/Brócoli Maracaibo F1 (en campo).jpg',
       vendedor: { name: "DonJaramillo", edad: 53 },
       founding: { 
-        meta: 50000, description: "Broccoli F1 of singular flavor", img: "https://www.eluniversal.com.mx/sites/default/files/styles/f03-651x400/public/2019/03/27/como_hacer_un_huerto_casero_el_universal_istock.jpg?itok=bd1Mp0Ej",
+        meta: 50000, description: "Broccoli F1 of singular flavor", img: "../../assets/img/huerto-8.jpg",
         inversors: 8, total: 18000, days: 3, interes: 10, roi: 30
       },
       status: "Finished",
@@ -75,7 +75,7 @@ export class StorageService {
       preciom: 10, siembra: "05-09-2019", cosecha: "05-10-2019", img: '../../assets/img/Calabacita Sebring F1.jpg',
       vendedor: { name: "Lechugueitor61", edad: 29 },
       founding: { 
-        meta: 10000, description: "Delicius Squash Sebring F1 ", img: "https://www.eluniversal.com.mx/sites/default/files/styles/f03-651x400/public/2019/03/27/como_hacer_un_huerto_casero_el_universal_istock.jpg?itok=bd1Mp0Ej",
+        meta: 10000, description: "Delicius Squash Sebring F1 ", img: "../../assets/img/huerto-7.jpg",
         inversors: 2, total: 5000, days: 4, interes: 20, roi: 30
       },
       status: "Delivery",
@@ -90,7 +90,7 @@ export class StorageService {
       preciom: 10, siembra: "10-09-2019", cosecha: "10-10-2019", img: "../../assets/img/Cilantro Long Standing.jpg",
       vendedor: { name: "Leettuccee", edad: 40 },
       founding: { 
-        meta: 30000, description: "Lettuce of the highest quality and cleanliness", img: "https://www.eluniversal.com.mx/sites/default/files/styles/f03-651x400/public/2019/03/27/como_hacer_un_huerto_casero_el_universal_istock.jpg?itok=bd1Mp0Ej",
+        meta: 30000, description: "Lettuce of the highest quality and cleanliness", img: "../../assets/img/huerto-6.jpg",
         inversors: 8, total: 30000, days: 1, interes: 15, roi: 30
       },
       status: "Finished",
@@ -105,7 +105,7 @@ export class StorageService {
       preciom: 15, siembra: "20-09-2019", cosecha: "28-10-2019", img: '../../assets/img/Col Crespa o Kale.jpg',
       vendedor: { name: "LaLechuga", edad: 43 },
       founding: { 
-        meta: 40000, description: "Original red lettuce, 1kg per lettuce approximately", img: "https://www.eluniversal.com.mx/sites/default/files/styles/f03-651x400/public/2019/03/27/como_hacer_un_huerto_casero_el_universal_istock.jpg?itok=bd1Mp0Ej",
+        meta: 40000, description: "Original red lettuce, 1kg per lettuce approximately", img: "../../assets/img/huerto-5.jpg",
         inversors: 5, total: 16000, days: 6, interes: 10, roi: 30
       },
       status: "Finished",
@@ -120,7 +120,7 @@ export class StorageService {
       preciom: 18, siembra: "06-09-2019", cosecha: "06-10-2019", img: "../../assets/img/Espinaca Tigre F1.jpg",
       vendedor: { name: "Espinacas99", edad: 32 },
       founding: { 
-        meta: 20000, description: "Beautiful Spinach", img: "https://www.eluniversal.com.mx/sites/default/files/styles/f03-651x400/public/2019/03/27/como_hacer_un_huerto_casero_el_universal_istock.jpg?itok=bd1Mp0Ej",
+        meta: 20000, description: "Beautiful Spinach", img: "../../assets/img/huerto.jpg",
         inversors: 5, total: 10000, days: 2, interes: 5, roi: 30
       },
       status: "Finished",
@@ -135,7 +135,7 @@ export class StorageService {
       preciom: 18, siembra: "01-09-2019", cosecha: "10-10-2019", img: "../../assets/img/Lechuga Alexandria.jpg",
       vendedor: { name: "Espiloconacas", edad: 27 },
       founding: { 
-        meta: 60000, description: "1kg per spinach approximately", img: "https://www.eluniversal.com.mx/sites/default/files/styles/f03-651x400/public/2019/03/27/como_hacer_un_huerto_casero_el_universal_istock.jpg?itok=bd1Mp0Ej",
+        meta: 60000, description: "1kg per spinach approximately", img: "../../assets/img/huerto-1.jpg",
         inversors: 8, total: 30000, days: 2, interes: 3, roi: 30
       },
       status: "Delivery",
@@ -150,7 +150,7 @@ export class StorageService {
       preciom: 20, siembra: "02-09-2019", cosecha: "11-10-2019", img: "../../assets/img/Lechuga Rouxaï.jpg",
       vendedor: { name: "HombreModelo", edad: 48 },
       founding: { 
-        meta: 80000, description: "Clean spinach, from the space to your home", img: "https://www.eluniversal.com.mx/sites/default/files/styles/f03-651x400/public/2019/03/27/como_hacer_un_huerto_casero_el_universal_istock.jpg?itok=bd1Mp0Ej",
+        meta: 80000, description: "Clean spinach, from the space to your home", img: "../../assets/img/huerto-2.jpg",
         inversors: 3, total: 70000, days: 6, interes: 10, roi: 30
       },
       status: "Progress",
@@ -164,7 +164,7 @@ export class StorageService {
       preciom: 20, siembra: "02-09-2019", cosecha: "11-10-2019", img: "../../assets/img/Rábano Winner F1.jpg",
       vendedor: { name: "HombreModelo", edad: 48 },
       founding: { 
-        meta: 80000, description: "Clean spinach, from the space to your home", img: "https://www.eluniversal.com.mx/sites/default/files/styles/f03-651x400/public/2019/03/27/como_hacer_un_huerto_casero_el_universal_istock.jpg?itok=bd1Mp0Ej",
+        meta: 80000, description: "Clean spinach, from the space to your home", img: "../../assets/img/huerto-3.jpg",
         inversors: 3, total: 70000, days: 6, interes: 10, roi: 30
       },
       status: "Progress",
@@ -179,7 +179,7 @@ export class StorageService {
       preciom: 18, siembra: "01-09-2019", cosecha: "10-10-2019", img: "../../assets/img/Tomate Thorin F1.jpg",
       vendedor: { name: "Espiloconacas", edad: 27 },
       founding: { 
-        meta: 60000, description: "1kg per spinach approximately", img: "https://www.eluniversal.com.mx/sites/default/files/styles/f03-651x400/public/2019/03/27/como_hacer_un_huerto_casero_el_universal_istock.jpg?itok=bd1Mp0Ej",
+        meta: 60000, description: "1kg per spinach approximately", img: "../../assets/img/huerto-4.jpg",
         inversors: 8, total: 30000, days: 2, interes: 3, roi: 30
       },
       status: "Delivery",
@@ -280,6 +280,28 @@ export class StorageService {
     });
     return productsFilter;
   }
+  
+  filterByNameProductsSiembra(cadena){
+    let productsFilter = this.productsSiembra.filter((product) => {
+      return product.name.toLowerCase().includes(cadena.toLowerCase());
+    });
+    return productsFilter;
+  }
+
+  filterMorePriceProductsSiembra(number){
+    let productsFilter = this.productsSiembra.filter((product) => {
+      return product.preciom >= number;
+    });
+    return productsFilter;
+  }
+
+  filterLessPriceProductsSiembra(number){
+    let productsFilter = this.productsSiembra.filter((product) => {
+      return product.preciom <= number;
+    });
+    return productsFilter;
+  }
+
 
   fundings = [
     { producer: "Juan Lopez", siembra: "19-08-2019", invertido: 500,

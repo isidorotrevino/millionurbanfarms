@@ -23,11 +23,11 @@ export class ComprarProductorComponent implements OnInit {
   searchProduct(){
     let query = {criterio: (<HTMLInputElement>document.getElementById("criterio")).value, cadena: (<HTMLInputElement>document.getElementById("cadena")).value};
     if(query.criterio === "NAME"){
-      this.listProducts = this.storageService.filterByNameProducts(query.cadena);
+      this.listProducts = this.storageService.filterByNameProductsSiembra(query.cadena);
     } else if(query.criterio === "MORE THAN"){
-      this.listProducts = this.storageService.filterMorePriceProducts(parseInt(query.cadena));
+      this.listProducts = this.storageService.filterMorePriceProductsSiembra(parseInt(query.cadena));
     } else if(query.criterio === "LESS THAN"){
-      this.listProducts = this.storageService.filterLessPriceProducts(parseInt(query.cadena));
+      this.listProducts = this.storageService.filterLessPriceProductsSiembra(parseInt(query.cadena));
     }
   }
 
