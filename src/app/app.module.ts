@@ -41,9 +41,12 @@ import { ProveedorServicioComponent } from './proveedor-servicio/proveedor-servi
 import { RegistrarServicioComponent } from './proveedor-servicio/registrar-servicio/registrar-servicio.component';
 import { ServiciosComponent } from './proveedor-servicio/servicios/servicios.component';
 import { SolicitudesComponent } from './proveedor-servicio/solicitudes/solicitudes.component';
+import { SettingsComponent } from './shared/settings/settings.component';
+
+import { StoreModule } from '@ngrx/store';
+import { simpleReducer } from './storage/redux/simple.reducer';
 import { AboutUsComponent } from './shared/about-us/about-us.component';
 import { HelpComponent } from './shared/help/help.component';
-import { SettingsComponent } from './shared/settings/settings.component';
 
 @NgModule({
   declarations: [
@@ -76,9 +79,9 @@ import { SettingsComponent } from './shared/settings/settings.component';
     RegistrarServicioComponent,
     ServiciosComponent,
     SolicitudesComponent,
+    SettingsComponent, 
     AboutUsComponent,
-    HelpComponent,
-    SettingsComponent
+    HelpComponent
   ],
   imports: [
     BrowserModule,
@@ -90,7 +93,8 @@ import { SettingsComponent } from './shared/settings/settings.component';
     MatIconModule,
     MatToolbarModule,
     FormsModule,
-    BsDatepickerModule.forRoot()
+    BsDatepickerModule.forRoot(),
+    StoreModule.forRoot({ message: simpleReducer })
   ],
   providers: [],
   bootstrap: [AppComponent]

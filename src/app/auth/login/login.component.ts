@@ -2,6 +2,9 @@ import { Component, OnInit } from '@angular/core';
 import { NgForm } from '@angular/forms';
 import { Router } from '@angular/router';
 
+import { Store } from '@ngrx/store';
+import { SimpleState } from '../../storage/redux/simple.interface';
+
 import { StorageService } from '../../storage/storage.service';
 
 @Component({
@@ -12,7 +15,8 @@ import { StorageService } from '../../storage/storage.service';
 export class LoginComponent implements OnInit {
   user;
 
-  constructor(private router: Router, private storageService: StorageService) { }
+  constructor(private router: Router, private storageService: StorageService, 
+    private storageSimpleState: Store<SimpleState>) { }
 
   ngOnInit() {
     this.apagarSidebar();
@@ -21,6 +25,7 @@ export class LoginComponent implements OnInit {
 
   onSubmit(f: NgForm) {
     this.user = f.value;
+    this.changeMessage(this.user.username);
 
     if(this.user.username.toLowerCase() === "cliente"){
       this.storageService.registerUser(this.user);
@@ -41,6 +46,10 @@ export class LoginComponent implements OnInit {
       this.errorForm();
     }
 
+  }
+
+  changeMessage(user: string) {
+    this.storageSimpleState.dispatch({type: user});
   }
 
   apagarSidebar(){

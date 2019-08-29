@@ -205,6 +205,9 @@ export class StorageService {
     let productsFilter = this.products.filter((product) => {
       return product.name.toLowerCase().includes(cadena.toLowerCase());
     });
+    productsFilter.sort((a, b) => {
+      return (a.name > b.name)? 1:-1;
+    });
     return productsFilter;
   }
 

@@ -48,7 +48,7 @@ const routes: Routes = [
   { path: 'registrar_servicio', component: RegistrarServicioComponent },
   { path: 'servicios', component: ServiciosComponent },
   { path: 'solicitudes', component: SolicitudesComponent },
-  { path: 'about_us', component: AboutUsComponent},
+  { path: 'about', component: AboutUsComponent},
   { path: 'help', component: HelpComponent},
   { path: 'settings', component: SettingsComponent},
   { path: '', component: LoginComponent }
