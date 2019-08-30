@@ -12,11 +12,11 @@ export class StatusCompraComponent implements OnInit {
   constructor(private storageService: StorageService) { }
 
   ngOnInit() {
-    if(this.storageService.getUsername() === "cliente"){
+    if(this.storageService.getUsername() === "client@test.com"){
       this.listProducts = this.storageService.getThreeProductsStatus();
     }
 
-    if(this.storageService.getUsername() === "productor"){
+    if(this.storageService.getUsername() === "producer@test.com"){
       this.listProducts = this.storageService.getProductsSiembra();
     }
   }

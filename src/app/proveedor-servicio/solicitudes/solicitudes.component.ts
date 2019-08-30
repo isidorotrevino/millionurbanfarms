@@ -13,7 +13,7 @@ export class SolicitudesComponent implements OnInit {
   constructor(private storageService: StorageService) { }
 
   ngOnInit() {
-    if(this.storageService.getUsername() === "proveedors"){
+    if(this.storageService.getUsername() === "provider-b@test.com"){
       this.services = this.storageService.filterByServiceServices("Entregueitor12");
     }
   }

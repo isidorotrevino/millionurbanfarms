@@ -27,19 +27,19 @@ export class LoginComponent implements OnInit {
     this.user = f.value;
     this.changeMessage(this.user.username);
 
-    if(this.user.username.toLowerCase() === "cliente"){
+    if(this.user.username.toLowerCase() === "client@test.com"){
       this.storageService.registerUser(this.user);
       this.router.navigate(['dashboard']);
-    } else if(this.user.username.toLowerCase() === "productor"){
+    } else if(this.user.username.toLowerCase() === "producer@test.com"){
       this.storageService.registerUser(this.user);
       this.router.navigate(['dashboard']);
-    } else if (this.user.username.toLowerCase() === "inversionista"){
+    } else if (this.user.username.toLowerCase() === "investor@test.com"){
     this.storageService.registerUser(this.user);
     this.router.navigate(['dashboard']);
-    } else if(this.user.username.toLowerCase() === "proveedorb"){
+    } else if(this.user.username.toLowerCase() === "provider-a@test.com"){
       this.storageService.registerUser(this.user);
       this.router.navigate(['dashboard']);
-    } else if(this.user.username.toLowerCase() === "proveedors"){
+    } else if(this.user.username.toLowerCase() === "provider-b@test.com"){
       this.storageService.registerUser(this.user);
       this.router.navigate(['dashboard']);
     } else {

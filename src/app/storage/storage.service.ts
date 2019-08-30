@@ -150,7 +150,7 @@ export class StorageService {
       preciom: 20, siembra: "02-09-2019", cosecha: "11-10-2019", img: "../../assets/img/Lechuga Rouxaï.jpg",
       vendedor: { name: "HombreModelo", edad: 48 },
       founding: { 
-        meta: 80000, description: "Clean Lechuga Rouxaï, from the space to your home", img: "../../assets/img/huerto-2.jpg",
+        meta: 80000, description: "Clean Lettuce Rouxaï, from the space to your home", img: "../../assets/img/huerto-2.jpg",
         inversors: 3, total: 70000, days: 6, interes: 10, roi: 30
       },
       status: "In Progress",
@@ -242,7 +242,7 @@ export class StorageService {
 
   productsSiembra = [
     { 
-      name: "Letucce seeds", cantidad: 150, medida: "Kg", cantidadM: 5, precioM: 9, 
+      name: "Lettuce seeds", cantidad: 150, medida: "Kilograms", cantidadM: 5, precioM: 9, 
       preciom: 10, img: "https://3.imimg.com/data3/KS/EI/MY-13256592/lettuce-seed-250x250.jpg",
       vendedor: { name: "ElLechugas", edad: 48 },
       status: "Progress",
@@ -252,7 +252,7 @@ export class StorageService {
       }
     },
     { 
-      name: "Fertilizer", cantidad: 100, medida: "Kg", cantidadM: 15, precioM: 40, 
+      name: "Fertilizer", cantidad: 100, medida: "Kilograms", cantidadM: 3, precioM: 40, 
       preciom: 50, img: "https://gciturfacademy.com/wp-content/uploads/2018/01/pasture_fertilizer.jpg",
       vendedor: { name: "Fertilizant67", edad: 29 },
       status: "Delivery",
@@ -262,7 +262,7 @@ export class StorageService {
       }
     },
     { 
-      name: "Pesticide", cantidad: 100, medida: "Lt", cantidadM: 5, precioM: 12, 
+      name: "Pesticide", cantidad: 100, medida: "Unit", cantidadM: 5, precioM: 12, 
       preciom: 15, img: "https://5.imimg.com/data5/OE/SA/MY-4815803/predator-pesticide-500x500.jpg",
       vendedor: { name: "Pesto123", edad: 33 },
       status: "Handed",

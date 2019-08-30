@@ -15,7 +15,7 @@ export class DashboardComponent implements OnInit {
   ngOnInit() {
     this.prenderSidebar();
 
-    if(this.storageService.getUsername() === "cliente"){
+    if(this.storageService.getUsername() === "client@test.com"){
       this.items = [
         {name:"Buy", route:"../comprar_cliente", icon:"fas fa-carrot fa-5x icon-option"},
         {name:"Records", route:"../historial_cliente", icon:"fas fa-file-invoice-dollar fa-5x icon-option"},
@@ -23,7 +23,7 @@ export class DashboardComponent implements OnInit {
       ]
     }
 
-    if(this.storageService.getUsername() === "productor"){
+    if(this.storageService.getUsername() === "producer@test.com"){
       this.items = [
         {name:"Buy", route:"../comprar_productor", icon:"fas fa-cart-plus fa-5x icon-option"},
         {name:"Orders", route:"../pedidos_productor", icon:"fas fa-cash-register fa-5x icon-option"},
@@ -35,30 +35,30 @@ export class DashboardComponent implements OnInit {
         {name:"Status", route:"../status", icon:"fas fa-chart-bar fa-5x icon-option"},
       ]
     }
-    if(this.storageService.getUsername() === "inversionista"){
+    if(this.storageService.getUsername() === "investor@test.com"){
       this.items = [
         {name:"Finance a Harvest", route:"../financiar_cosecha", icon:"fas fa-hand-holding-usd fa-5x icon-option"},
         {name:"Fundings", route:"../historial_inversiones", icon:"far fa-list-alt fa-5x icon-option"},
       ]
     }
-    if(this.storageService.getUsername() === "proveedorb"){
+    if(this.storageService.getUsername() === "provider-a@test.com"){
       this.items = [
         {name:"Add", route:"../registrar_bien",icon:"fas fa-plus-circle fa-5x icon-option"},
         {name:"Products", route:"../productos_bien", icon:"fas fa-th-list fa-5x icon-option"},
         {name:"Orders", route:"../pedidos_proveedor_bien", icon:"fas fa-cash-register fa-5x icon-option"},
       ]
     }
-    if(this.storageService.getUsername() === "proveedors"){
+    if(this.storageService.getUsername() === "provider-b@test.com"){
       this.items = [
         {name:"Add", route:"../registrar_servicio",icon:"fas fa-plus-circle fa-5x icon-option"},
-        {name:"Products", route:"../servicios", icon:"fas fa-th-list fa-5x icon-option"},
+        {name:"Assets", route:"../servicios", icon:"fas fa-th-list fa-5x icon-option"},
         {name:"Requests", route:"../solicitudes", icon:"fas fa-car-side fa-5x icon-option"},
       ]
     }
 
   }
 
-  prenderSidebar(){
+  prenderSidebar() {
     document.getElementById("sidebar").hidden = false;
   }
 
